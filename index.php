@@ -32,7 +32,7 @@ $minings = getAll('mining_tb');
                                 <tr>
                                     <th scope="row"><?= $key + 1 ?></th>
                                     <td><?= $mining['mine_color'] ?></td>
-                                    <td><?= $mining['mine_owner'] ?></td>
+                                    <td><?= $mining['install_owner'] ?></td>
                                 </tr>
                             <?php endforeach; ?>
                         </tbody>

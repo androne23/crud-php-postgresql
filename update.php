@@ -31,7 +31,7 @@ if (isset($_POST['update'])) {
                         </div>
                         <div class="form-group">
                             <label for="">owner</label>
-                            <input type="text" name="mine_owner" class="form-control" value="<?= $data['mine_owner'] ?>">
+                            <input type="text" name="install_owner" class="form-control" value="<?= $data['install_owner'] ?>">
                         </div>
                 </div>
                 <div class="card-footer">
