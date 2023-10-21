@@ -1,10 +1,10 @@
 <?php
 
-$host = 'localhost';
+$host = '192.168.5.3';
 $port = '5432';
-$username = 'barenmaulana';
-$password = 'maulana';
-$dbname = 'barenmaulana';
+$username = 'postgres';
+$password = 'Test1234$';
+$dbname = 'projetsi';
 $connection_string = "host={$host} port={$port} dbname={$dbname} user={$username} password={$password}";
 
 $conn = pg_connect($connection_string);

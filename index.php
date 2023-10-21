@@ -1,11 +1,8 @@
 <?php
 require 'includes/header.php';
 
-$getUrl = $_SERVER['REQUEST_URI'];
-$uri = explode('/', $getUrl);
-if ($uri[2] == '' || $uri[2] == 'index.php') {
-    $minings = getAll('mining_tb');
-}
+$minings = getAll('mining_tb');
+
 ?>
 
 <div class="container my-4">
@@ -26,7 +23,6 @@ if ($uri[2] == '' || $uri[2] == 'index.php') {
                             <tr>
                                 <th scope="col">#</th>
                                 <th scope="col">Mine color</th>
-                                <th scope="col">Mining date</th>
                                 <th scope="col">Mine owner</th>
                                 <th scope="col">Action</th>
                             </tr>
@@ -36,7 +32,6 @@ if ($uri[2] == '' || $uri[2] == 'index.php') {
                                 <tr>
                                     <th scope="row"><?= $key + 1 ?></th>
                                     <td><?= $mining['mine_color'] ?></td>
-                                    <td><?= $mining['install_date'] ?></td>
                                     <td><?= $mining['mine_owner'] ?></td>
                                 </tr>
                             <?php endforeach; ?>

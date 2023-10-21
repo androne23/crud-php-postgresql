@@ -24,10 +24,6 @@ if (isset($_POST['tambah'])) {
                             <input type="text" name="mine_color" class="form-control">
                         </div>
                         <div class="form-group">
-                            <label for="">date</label>
-                            <input type="date" name="install_date" class="form-control">
-                        </div>
-                        <div class="form-group">
                             <label for="">owner</label>
                             <input type="text" name="mine_owner" class="form-control">
                         </div>
