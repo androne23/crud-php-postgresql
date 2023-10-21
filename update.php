@@ -30,10 +30,6 @@ if (isset($_POST['update'])) {
                             <input type="text" name="mine_color" class="form-control" value="<?= $data['mine_color'] ?>">
                         </div>
                         <div class="form-group">
-                            <label for="">date</label>
-                            <input type="text" name="install_date" class="form-control " value="<?= $data['install_date'] ?>">
-                        </div>
-                        <div class="form-group">
                             <label for="">owner</label>
                             <input type="text" name="mine_owner" class="form-control" value="<?= $data['mine_owner'] ?>">
                         </div>
