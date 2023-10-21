@@ -42,10 +42,9 @@ function insert($data)
     global $conn;
 
     $mine_color = $data['mine_color'];
-    $date = $data['install_date'];
     $owner = $data['install_owner'];
 
-    $query = "INSERT INTO mining_tb(mine_color,install_date,install_owner) VALUES('$mine_color','$date','$owner')";
+    $query = "INSERT INTO mining_tb(mine_color,install_owner) VALUES('$mine_color','$owner')";
 
     $insert = pg_query($conn, $query);
 
@@ -57,13 +56,11 @@ function update($data)
     global $conn;
 
     $mine_color = $data['mine_color'];
-    $date = $data['install_date'];
     $owner = $data['install_owner'];
     $id = $data['mine_id'];
 
     $query = "UPDATE mining_tb SET
         mine_color = '$mine_color',
-        install_date = '$date',
         install_owner = '$owner'
         WHERE mine_id = $id";
 
