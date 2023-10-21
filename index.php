@@ -25,7 +25,6 @@ if ($uri[2] == '' || $uri[2] == 'index.php') {
                         <thead class="thead-dark">
                             <tr>
                                 <th scope="col">#</th>
-                                <th scope="col">Mine result</th>
                                 <th scope="col">Mine color</th>
                                 <th scope="col">Mining date</th>
                                 <th scope="col">Mine owner</th>
@@ -36,14 +35,9 @@ if ($uri[2] == '' || $uri[2] == 'index.php') {
                             <?php foreach ($minings as $key => $mining) : ?>
                                 <tr>
                                     <th scope="row"><?= $key + 1 ?></th>
-                                    <td><?= $mining['mine_result'] ?></td>
                                     <td><?= $mining['mine_color'] ?></td>
                                     <td><?= $mining['install_date'] ?></td>
                                     <td><?= $mining['mine_owner'] ?></td>
-                                    <td>
-                                        <a href="update.php?id=<?= $mining['mine_id'] ?>" class="btn btn-primary shadow"><img src="icon/pencil.svg" width="20"></a>
-                                        <a href="delete.php?id=<?= $mining['mine_id'] ?>" class="btn btn-danger shadow" onclick="return confirm('data akan terhapus')"><img src="icon/trash.svg" width="20"></a>
-                                    </td>
                                 </tr>
                             <?php endforeach; ?>
                         </tbody>
